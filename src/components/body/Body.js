@@ -3,6 +3,7 @@ import Apropos from "./Apropos";
 import MesServices from "./MesServices";
 import React, { useEffect, useState } from 'react';
 import WithDataLoading from '../WithDataLoading'
+import Contact from "./Contact";
 
 
 function Body() {
@@ -26,6 +27,7 @@ function Body() {
          <Apropos />
          <MesServices />
          <DataLoading isLoading={appState.loading} projects={appState.projects}/>
+         <Contact />
      </div>
  )
 }

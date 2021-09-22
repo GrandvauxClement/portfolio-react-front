@@ -3,7 +3,7 @@ import Col from "react-bootstrap/Col";
 import quisuisje from "../../assets/image/quiSuisJe.jpg"
 function Apropos() {
     return(
-        <div className='container'>
+        <div className='container' id='aPropos'>
             <Row>
                 <Col>
                     <h2 className='my-color-blue h2'>Qui suis-je ?</h2>
