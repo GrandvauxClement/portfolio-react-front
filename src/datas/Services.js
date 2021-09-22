@@ -10,7 +10,7 @@ import siteFramework from '../assets/image/services/developpeur-site-framework.j
 import logoSiteFramework from '../assets/image/services/symfony.svg'
 import referencement from '../assets/image/services/referencement.jpg'
 import logoReferencement from '../assets/image/services/icone-SEO.png'
-export const services = [
+export const dataServices = [
     {
         id: 'service1',
         title: 'Création et intégration de maquettes graphique',
@@ -32,16 +32,16 @@ export const services = [
     {
         id: 'service3',
         title: 'Développement de site et d\'application sur mesure',
-        subtitle: 'Avec des frameworks comme Symfony, Angular et pleins d\'autre',
+        subtitle: 'Symfony, Angular, ect ..',
         logo: logoSiteFramework,
         image: siteFramework,
-        textUn: 'Des applications web mobile (iOS / Android) aux applications ERP métier, en incluant également les sites web, je travaille avec vous sur un cahier des charges pour définir vos besoin et m\'occuper ensuite du développement de votre produit.',
+        textUn: 'Des applications mobile aux applications ERP métier, je travaille avec vous sur un cahier des charges pour définir vos besoin et m\'occuper ensuite du développement de votre produit.',
         textDeux: 'J\'assure ensuite les mises à jour de celui-ci en fonction de vos besoins.'
     },
     {
         id: 'service4',
         title: 'Référencement naturel (SEO)',
-        subtitle: 'Ensemble des techniques qui consistent à positionner favorablement un site sur les premiers résultats des moteur de recherche',
+        subtitle: 'Techniques qui consistent à positionner un site sur les premiers résultats des moteur de recherche',
         logo: logoReferencement,
         image: referencement,
         textUn: 'Nous réfléchissons ensemble à une stratégie SEO pour votre site, la mettons ensuite en application en suivant les 3 axes classiques du référencement :',

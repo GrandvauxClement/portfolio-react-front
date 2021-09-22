@@ -1,6 +1,9 @@
 .mon-logo {
     max-width: 130px;
 }
-.navbar-bg {
+.navbar-transparent {
+    background-color: rgba(127, 182, 212, 0);
+}
+.navbar-my-Blue {
     background-color: #7FB6D4;
 }
