@@ -65,10 +65,10 @@ function Navigation() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="">
-                            <Nav.Link href="#aPropos" className='text-white mx-3' >A propos</Nav.Link>
-                            <Nav.Link href="#mesServices" className='text-white mx-3'>Mes services</Nav.Link>
-                            <Nav.Link href="#fh5co-project" className='text-white mx-3'>Mes projets</Nav.Link>
-                            <Nav.Link href="#contact" className='text-white mx-3'>Contact</Nav.Link>
+                            <Nav.Link href="#aPropos" className='text-white mx-2' >A propos</Nav.Link>
+                            <Nav.Link href="#mesServices" className='text-white mx-2'>Mes services</Nav.Link>
+                            <Nav.Link href="#fh5co-project" className='text-white mx-2'>Mes projets</Nav.Link>
+                            <Nav.Link href="#contact" className='text-white mx-2'>Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

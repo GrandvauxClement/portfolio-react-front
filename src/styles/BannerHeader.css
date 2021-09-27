@@ -16,12 +16,16 @@ header img {
     header img {
         height: 10em;
     }
+    .hero-content-left h1 {
+        font-size: 5em;
+        line-height : 1em;
+    }
     /*Ordi */
 }
 @media screen and (max-width:1000px )
 {
     .header-contenu{
-        height: 70vh;
+        height: 50vh;
     }
     #maNavBar{
         height: 17vh;
@@ -32,6 +36,10 @@ header img {
     }
     header img {
         height: 7em;
+    }
+    .hero-content-left h1 {
+        font-size: 3em;
+        line-height : 1.5em;
     }
     /*Tablette / Smartphone */
 }
@@ -59,10 +67,7 @@ header img {
 .sign-up-form-wrap {
     z-index:2
 }
-.hero-content-left h1 {
-    font-size: 5em;
-    line-height : 1em;
-}
+
 .hero-content-left button {
     background-color: #7FB6D4;
     color: white;

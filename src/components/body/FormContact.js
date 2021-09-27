@@ -28,7 +28,7 @@ export const useFormControls = () => {
             if (fieldValues.email)
                 temp.email = /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(fieldValues.email)
                     ? ""
-                    : "L'Email n'est pas valid."
+                    : "L'Email n'est pas valide."
 
         }
 
@@ -55,6 +55,19 @@ export const useFormControls = () => {
             // send to my back end data of form
            // await postContactForm(values);
             console.log('values of my form :'+values.name +' '+values.email)
+
+                // POST request using fetch inside useEffect React hook
+                const requestOptions = {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name: values.name, email: values.email, devis: false, objet: values.objet, message: values.message  })
+                };
+                fetch('https://127.0.0.1:8000/api/contacts', requestOptions)
+                    .then(response => console.log('response :' + response.json()) );
+
+
+// empty dependency array means this effect will only run once (like componentDidMount in classes)
+
         }
     };
     const formIsValid = (fieldValues = values) => {
@@ -88,7 +101,7 @@ const inputFieldValues = [
     {
         name: "objet",
         label: "Objet du mail",
-        id: "my-email"
+        id: "my-objet"
     },
     {
         name: "message",
@@ -111,6 +124,7 @@ function ContactForm() {
             {inputFieldValues.map((inputFieldValue, index) => {
                 return (
                     <TextField
+                        variant="filled"
                         key={index}
                         onBlur={handleInputValue}
                         onChange={handleInputValue}
@@ -120,12 +134,12 @@ function ContactForm() {
                         rows={inputFieldValue.rows ?? 1}
                         autoComplete="none"
                         {...(errors[inputFieldValue.name] && {error: true, helperText: errors[inputFieldValue.name]})}
-                        className='my-2'
+                        className='my-2 text-white'
                         />
                 );
             })}
 
-            <Button type="submit" disabled={!formIsValid()}> Envoyer </Button>
+            <Button type="submit" disabled={!formIsValid()} variant="#7FB6D4" style={{backgroundColor: '#085c7f', color:'white'}}> Envoyer </Button>
         </form>
     )
 }
